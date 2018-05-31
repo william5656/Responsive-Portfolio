@@ -207,48 +207,100 @@ h3 {
     -ms-transform: translate(-50%, -50%);
   }
 
+  label {
+      margin :0 40px 0 0;
+      font-size:26px;
+      height: 70px;
+      line-height: 70px;
+      display: none;
+      width: 26px;
+      float: right;
+  }
+
+  #toggle {
+      display:none;
+  }
+
   @media screen and (max-width: 980px) {
   /* The body's bg color will be #333 */
     #main {
-    width: 800px;
-  }
+    width: 400px;
+    height: 350px;
+    margin: 0px;
+
+    }
     #header {
     width:800px;
     }
     #navclick {
         width: 300px;
-      }
+    }
+    p {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 786px) {
     /* The body's bg color will be #333 */
       #main {
-      width: 700px;
+      width: 500px;
+      margin: 0 auto;
+      margin-top: 30px;
     }
       #header{
-      width: 700px;
-      }
-      #navclick {
-        width: 300px;
-      }
-  }
-
-  @media screen and (max-width: 640px) {
-    /* The body's bg color will be #333 */
-      #main {
-      width: 460px;
-    }
-      #header {
       width: 500px;
       }
-      h1 {
-        font-size: 20px;
-        margin-bottom:10px;
-      }
-      .atitle {
-          padding: 10px;
-      }
       #navclick {
         width: 300px;
       }
+      p {
+          font-size: 100%;
+      }
+      h2 {
+        font-size: 24px;
+    }
   }
+
+  @media only screen and (max-width : 640px) {
+
+    #main {
+        width: 400px;
+        position: fixed;
+        left: 20px;
+        overflow: auto;
+
+      }
+        #header{
+        width: 460px;
+        }
+
+    label {
+        display:block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        widows: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        background-color: #ffffff;
+        margin: 0;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+    #toggle:checked + .menu {
+        display:block;
+    }
+    nav {
+        position: relative  ;
+        margin-left: 30%;
+        z-index: 10;
+    }
+}
+	
+

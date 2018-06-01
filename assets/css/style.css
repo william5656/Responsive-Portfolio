@@ -179,34 +179,6 @@ h3 {
     padding:10px 0px;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-image: url("../images/underconstruction.gif");
-    overflow: auto;
-    height:0;
-    transition: .5s ease;
-    width: 100%;
-    z-index: 5;
-  }
-  
-  #main:hover .overlay {
-    bottom: 0;
-    height: 100%;
-  }
-  
-  .text {
-    white-space: nowrap; 
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
-
   label {
       margin :0 40px 0 0;
       font-size:26px;
@@ -222,10 +194,8 @@ h3 {
   }
 
   @media screen and (max-width: 980px) {
-  /* The body's bg color will be #333 */
     #main {
     width: 400px;
-    height: 350px;
     margin: 0px;
 
     }
@@ -235,16 +205,9 @@ h3 {
     #navclick {
         width: 300px;
     }
-    p {
-        font-size: 12px;
-    }
-    h2 {
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width: 786px) {
-    /* The body's bg color will be #333 */
       #main {
       width: 500px;
       margin: 0 auto;
@@ -267,15 +230,18 @@ h3 {
   @media only screen and (max-width : 640px) {
 
     #main {
-        width: 400px;
+        width: 480px;
         position: fixed;
         left: 20px;
-        overflow: auto;
-
       }
-        #header{
-        width: 460px;
+    #header{
+        width: 524px;
+        margin: 0 auto;
         }
+    .profilepic {
+       text-align: center;
+        width: 480px;
+    }
 
     label {
         display:block;

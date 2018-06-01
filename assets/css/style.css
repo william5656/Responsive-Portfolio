@@ -19,6 +19,7 @@
 .bottom {
     min-height:100%;
     position: relative;
+    overflow: auto;
 }
 
 #nav {
@@ -74,6 +75,7 @@ p {
 html,body {
     height:100%;
     margin: 0;
+    overflow: auto;
 }
 
 body {
@@ -192,6 +194,7 @@ h3 {
   #toggle {
       display:none;
   }
+  
 
   @media screen and (max-width: 980px) {
     #main {
@@ -205,6 +208,9 @@ h3 {
     #navclick {
         width: 300px;
     }
+    .portfoliobox .pic {
+        width: 44%;
+    }
 }
 
 @media screen and (max-width: 786px) {
@@ -212,6 +218,9 @@ h3 {
       width: 500px;
       margin: 0 auto;
       margin-top: 30px;
+    }
+    .portfoliobox .pic {
+        width: 44%;
     }
       #header{
       width: 500px;
@@ -231,8 +240,6 @@ h3 {
 
     #main {
         width: 480px;
-        position: fixed;
-        left: 20px;
       }
     #header{
         width: 524px;
@@ -243,6 +250,9 @@ h3 {
         width: 480px;
     }
 
+    .portfoliobox .pic {
+        width: 44%;
+    }
     label {
         display:block;
         cursor: pointer;
